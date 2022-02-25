@@ -1,0 +1,10 @@
+from django.urls import path
+from . import views
+
+
+app_name = 'travello'
+urlpatterns = [ 
+    path('', views.index, name='index'),
+    path('destination/<int:id>/', views.destination, name='destination')
+
+]
